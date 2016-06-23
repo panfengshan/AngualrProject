@@ -1,0 +1,36 @@
+<div ng-include="headerFile"></div>
+
+
+<div class="container">
+  <h1 class="myOrder-title"><b>我的订单</b></h1>
+  <table class="table table-responsive adjust_td">
+    <thead>
+      <tr>
+        <th>编号</th>
+        <th>菜品</th>
+        <th>下单时间</th>
+        <th>联系人</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="p in orderList">
+        <td>{{p.oid}}</td>
+        <td><img ng-src="img/{{p.img_sm}}" alt="" class="image-responsive"></td>
+        <td>{{p.order_time | date:'yyyy-MM-dd&nbsp;&nbsp;HH:mm'}}</td>
+        <td>{{p.user_name}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div ng-include="footerFile"></div>
+
+
+
+
+
+
+
+
+

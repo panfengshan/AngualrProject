@@ -1,0 +1,92 @@
+body{
+  position:relative;
+  overflow-x: hidden;
+  margin-top:60px;
+}
+.bigpic>img{
+  max-width: 100%;
+}
+.page{
+  transition: all .15s linear;
+  position:absolute;
+  width:100%;
+  margin-bottom: 60px;
+}
+/*即将要离开的ngView动画开始时的样式*/
+.page.ng-leave{
+  left:0;
+  opacity:1;
+}
+/*即将要离开的ngView动画结束时的样式*/
+.page.ng-leave-active{
+  left:-100%;
+  opacity:0;
+}
+/*即将要进入的ngView动画开始时的样式*/
+.page.ng-enter{
+  left:100%;
+  opacity:0;
+}
+/*即将要进入的ngView动画结束时的样式*/
+.page.ng-enter-active{
+  left:0;
+  opacity:1;
+}
+//index页面的样式
+.menu-bottom{
+  li{
+    width:32%;
+    text-align: center;
+    margin-top: 15px;
+    a{
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
+/*start页面的样式*/
+.box{
+  text-align: center;
+  line-height: 100%;
+}
+.box>img{
+  margin:0 auto;
+}
+.box>h1{
+  font-size: 7em;
+  color:#2e78b7;
+}
+
+/*main页面样式*/
+.page-header{
+  margin:10px 0;
+}
+.media-body>span{
+  color:#e4393c;
+}
+.list-group-item{
+  padding:0 15px;
+}
+
+//detail页面样式
+.wantOrder{
+  margin-right: 10px;
+}
+
+//myorder页面
+.myOrder-title{
+  text-align: center;
+}
+.isHide{
+  display: none;
+}
+.isShow{
+  display:block;
+}
+.table tbody tr>td{
+  vertical-align: middle;
+}
+.table tbody tr>td>img{
+  max-width:100%;
+}
